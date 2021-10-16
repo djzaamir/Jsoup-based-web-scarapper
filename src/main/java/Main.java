@@ -28,7 +28,7 @@ public class Main {
                 //Get the table title
                 String title = table.getElementsByTag("thead").get(0).getElementsByTag("th").get(0).text();
 
-                System.out.println("\n\n===============" + title + "===============\n");
+                System.out.println("\n\n=============== " + title + " ===============\n");
 
                 //Get all the data rows for this table
                 Elements trs = table.getElementsByTag("tbody")
@@ -39,8 +39,8 @@ public class Main {
                 for (Element tr:
                      trs) {
 
-                    System.out.printf("=> %s\n ", tr.child(0).text().trim());
-                    System.out.printf("=> %s\n", tr.child(1).text().trim());
+                    System.out.printf("=> %s\n", tr.child(0).text().trim());
+                    System.out.printf("=> %s\n\n", tr.child(1).text().trim());
 
 
                 }
